@@ -1,0 +1,137 @@
+.card_container {
+    display: flex;
+    height: 60vh;
+    width: 20vw;
+    background-color: #d4af37;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card_component img {
+    height: 25vh;
+    width: 20vw;
+    display: block;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+
+.card_container .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card p {
+    color: white;
+    margin-top: 2vh;
+    text-align: left;
+    margin-left: 1vw;
+    font-size: 0.9rem;
+}
+
+.card h2 {
+    margin-top: 3vh;
+    text-align: left;
+    margin-left: 1vw;
+}
+
+.card h4 {
+    text-align: left;
+    margin-left: 1vw;
+    font-weight: 400;
+}
+
+.card div {
+    margin-top: 3vh;
+    color: #000;
+    margin-left: 1vw;
+    width: 18vw;
+    height: 5vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 1vw;
+}
+
+.close_icon {
+    height: 30px;
+    width: 40px;
+    color: white;
+}
+
+.card_blog_component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+}
+
+.blog_button {
+    width: 8vw;
+    height: 5vh;
+    font-size: 13px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    
+}
+
+.blog_button:hover {
+    color: black;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.card_textbox {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .card_container {
+        width: 60vw;
+    }
+    .card_component img {
+        height: 25vh;
+        width: 60vw;
+        display: block;
+        object-fit: cover;
+        object-position: 100% 100%;
+    }
+    
+    .card p {
+        margin-left: 3vw;
+    }
+    
+    .card h2 {
+        margin-left: 3vw;
+    }
+    
+    .card h4 {
+        text-align: left;
+        margin-left: 3vw;
+        font-weight: 400;
+    }
+    
+    .card div {
+        margin-left: 3vw;
+    }
+
+    .card_textbox {
+        min-width: 55vw;
+    }
+
+    .blog_button {
+        width: 50vw;        
+    }
+}
+

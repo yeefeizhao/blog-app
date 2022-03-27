@@ -1,0 +1,91 @@
+.header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #003518;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+.header_logo {
+    content: url("./logo1.png");
+    height: 10vh;
+    width: auto; 
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+.header_text {
+    min-width: 18vw;
+    padding: 10px;
+    right: 0;
+    position: absolute;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.header_text p {
+    margin: 0 10px;
+}
+
+.header_nav {
+    display: flex;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
+
+.dropdown {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.account_text {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown_content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+/* Show the dropdown menu on hover */
+.account_text:hover .dropdown_content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.account_text:hover .dropdown {
+    background-color: #3e8e41;
+}

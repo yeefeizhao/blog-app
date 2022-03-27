@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.blogs {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.blog .card_component {
+    display: inline-block;
+    min-width: 20vw;
+    margin-right: 2vw;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #003518;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 650px) {
+    .blog {
+        width: 60vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        white-space: nowrap;
+    }
+    
+    .blog .card_component {
+        display: inline-block;
+        min-width: 60vw;
+        margin-bottom: 2vw;
+        min-height: 60vh;
+    }
+}
+
